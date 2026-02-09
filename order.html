@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Order</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Spicy Hub Restaurant</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a> 
+      <a href="menu.html">Menu</a> 
+      <a href="services.html">Services</a> 
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <br>
+  <section id="order">
+    <h2>Order Food</h2>
+
+    <form class="order-form">
+
+      <label>Customer Name</label>
+      <input type="text" required>
+
+      <label>Email</label>
+      <input type="email" required>
+
+      <label>Select Food Type</label>
+
+      <!-- RADIO BUTTONS -->
+      <input type="radio" name="type" id="veg" checked>
+      <label for="veg">Veg</label>
+
+      <input type="radio" name="type" id="nonveg">
+      <label for="nonveg">Non-Veg</label>
+
+      <!-- FOOD LISTS  -->
+      <div class="food-lists">
+
+        <div class="veg-list">
+          <label>Select Veg Item</label>
+          <select required>
+            <option>Idli</option>
+            <option>Dosa</option>
+            <option>Masala Dosa</option>
+            <option>Veg Briyani</option>
+            <option>Veg Meals</option>
+            <option>Aloo Gopi</option>
+            <option>Plak Paneer</option>
+            <option>Paneer Butter Masala</option>
+            <option>Chapati</option>
+            <option>Pongal</option>
+          </select>
+        </div>
+
+        <div class="nonveg-list">
+          <label>Select Non-Veg Item</label>
+          <select>
+            <option>Chicken Briyani</option>
+            <option>Mutton Briyani</option>
+            <option>Fish Briyani</option>
+            <option>Hyderabadi Biryani</option>
+            <option>Chettinad Chicken</option>
+            <option>Mutton Chukka</option>
+            <option>Andhra Chilli Chicken</option>
+            <option>Kerala Fish Moilee</option>
+            <option>Mangalorean Ghee Roast</option>
+          </select>
+        </div>
+
+      </div>
+
+      <p><strong>Note:</strong> Prices are available in the Menu page.</p>
+
+      <a href="index.html" class="btn">Order</a>
+
+    </form>
+  </section>
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+  }
+</script>
+
+</body>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> No.25, Main Road, Dharmapuri - 636701</p>
+      <p><strong>Phone:</strong> +91 7010644408</p>
+      <p><strong>Email:</strong> spicyhubrestaurant@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Opening Hours</h3>
+      <p>Mon – Fri: 10:00 AM – 10:00 PM</p>
+      <p>Sat – Sun: 9:00 AM – 11:00 PM</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <p>Instagram | Facebook | Twitter</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <strong>© 2026 Spicy Hub. All rights reserved.</strong>
+  </div>
+</footer>
+</html>

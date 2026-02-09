@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <h1>Spicy Hub Restaurant</h1>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+            <a href="index.html">Home</a> 
+            <a href="menu.html">Menu</a> 
+            <a href="services.html">Services</a> 
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <br>
+    <section id="booking-details">
+        <h2>Book a Table (Dine-In)</h2>
+        <div class="booking-wrapper">
+            <form action="book.php" method="post">
+
+                <label>Name</label>
+                <input type="text" placeholder="Enter your Name" name="name" required>
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Email Address" name="email" required>
+
+                <label>Booking Date</label>
+                <input type="datetime-local" name="date" required>
+
+                <input type="submit" class="book-now-btn" value="Book Now" name="submit">
+
+            </form>
+            <div class="booking-gif">
+                <img src="https://cdn.dribbble.com/userupload/20012948/file/original-ea6e6924a25dce661a0be71fa4b685b4.gif" alt="table-gif" >
+            </div>
+        </div>
+    </section>
+    <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+  }
+</script>
+
+</body>
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> No.25, Main Road, Dharmapuri - 636701</p>
+      <p><strong>Phone:</strong> +91 7010644408</p>
+      <p><strong>Email:</strong> spicyhubrestaurant@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Opening Hours</h3>
+      <p>Mon – Fri: 10:00 AM – 10:00 PM</p>
+      <p>Sat – Sun: 9:00 AM – 11:00 PM</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <a class="social" href="">Instagram | Facebook | Twitter</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Spicy Hub. All rights reserved.
+  </div>
+</footer>
+
+</html>

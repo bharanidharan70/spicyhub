@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Spicy Hub Restaurant</h1>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav id="nav-links">
+      <a href="index.html">Home</a> 
+      <a href="menu.html">Menu</a> 
+      <a href="services.html">Services</a> 
+      <a href="order.html">Online Order</a>
+    </nav>
+  </header>
+  <br>
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p><strong>📍 Address:</strong> No.25, Main Road, Dharmapuri – 636701</p>
+      <p><strong>📱 Mobile Number:</strong> +91 7010644408</p>
+      <p><strong>📧 Email:</strong> spicyhubrestaurant@gmail.com</p>
+    </div>
+
+    <form>
+      <label>Name</label>
+      <input type="text" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email">
+
+      <label>Message</label>
+      <textarea rows="4"></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <section id="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31206.264057188095!2d78.13088446887245!3d12.126994197717202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac16f95a63ed01%3A0x3f2cb64e61c93aef!2sDharmapuri%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1770261722270!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade" alt="map"></iframe>
+  </section>
+  <script>
+  function toggleMenu() {
+    document.getElementById("nav-links").classList.toggle("active");
+  }
+</script>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p><strong>Address:</strong> No.25, Main Road, Dharmapuri - 636701</p>
+      <p><strong>Phone:</strong> +91 7010644408</p>
+      <p><strong>Email:</strong> spicyhubrestaurant@gmail.com</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Opening Hours</h3>
+      <p>Mon – Fri: 10:00 AM – 10:00 PM</p>
+      <p>Sat – Sun: 9:00 AM – 11:00 PM</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <p>Instagram | Facebook | Twitter</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Spicy Hub. All rights reserved.
+  </div>
+</footer>
+
+
+</html>
