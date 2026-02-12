@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
 </head>
 
 <body>
 
-    <header>
-        <h1>Spicy Hub Restaurant</h1>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <header>
+    <h1>Spicy Hub Restaurant</h1>
+
+    <div class="hamburger" onclick="openMenu()">☰</div>
     <nav id="nav-links">
-            <a href="index.html">Home</a> 
-            <a href="menu.html">Menu</a> 
-            <a href="services.html">Services</a> 
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <br>
-    <section id="booking-details">
-        <h2>Book a Table (Dine-In)</h2>
-        <div class="booking-wrapper">
-            <form action="book.php" method="post">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-                <label>Name</label>
-                <input type="text" placeholder="Enter your Name" name="name" required>
+  </header>
+  <br>
+  <section id="booking-details">
+    <h2>Book a Table</h2>
+    <div class="booking-wrapper">
+      <form action="book.php" method="post">
 
-                <label>Email</label>
-                <input type="email" placeholder="Enter your Email Address" name="email" required>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your Name" name="name" required>
 
-                <label>Booking Date</label>
-                <input type="datetime-local" name="date" required>
+        <label>Email</label>
+        <input type="email" placeholder="Enter your Email Address" name="email" required>
 
-                <input type="submit" class="book-now-btn" value="Book Now" name="submit">
+        <label>Booking Date</label>
+        <input type="datetime-local" name="date" required>
 
-            </form>
-            <div class="booking-gif">
-                <img src="https://cdn.dribbble.com/userupload/20012948/file/original-ea6e6924a25dce661a0be71fa4b685b4.gif" alt="table-gif" >
-            </div>
-        </div>
-    </section>
-    <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-  }
-</script>
+        <input type="submit" class="book-now-btn" value="Book Now" name="submit">
+
+      </form>
+      <div class="booking-gif">
+        <img src="https://cdn.dribbble.com/userupload/20012948/file/original-ea6e6924a25dce661a0be71fa4b685b4.gif"
+          alt="table-gif">
+      </div>
+    </div>
+  </section>
+  <script>
+    function openMenu() {
+      document.getElementById("nav-links").style.left = "0";
+    }
+  </script>
 
 </body>
 <footer class="footer">

@@ -12,11 +12,11 @@
 <body>
   <header>
     <h1>Spicy Hub Restaurant</h1>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="openMenu()">☰</div>
     <nav id="nav-links">
-      <a href="index.html">Home</a> 
-      <a href="menu.html">Menu</a> 
-      <a href="services.html">Services</a> 
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -232,10 +232,10 @@
     </div>
   </section>
   <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-  }
-</script>
+    function openMenu() {
+      document.getElementById("nav-links").style.left = "0";
+    }
+  </script>
 
 </body>
 

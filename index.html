@@ -14,13 +14,14 @@
   <header>
     <h1>Spicy Hub Restaurant</h1>
 
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <div class="hamburger" onclick="openMenu()">☰</div>
     <nav id="nav-links">
-      <a href="index.html">Home</a> 
-      <a href="menu.html">Menu</a> 
-      <a href="services.html">Services</a> 
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
+
   </header>
   <br>
 
@@ -71,6 +72,11 @@
     </div>
   </section>
 
+  <a href="booking.html" class="floating">
+    Order
+  </a>
+
+
   <section id="plate">
     <div class="plate-box">
       <img src="images/food_plate1-removebg-preview.png" alt="food-1">
@@ -79,7 +85,7 @@
   </section>
 
   <section id="why" class="white-section">
-  
+
     <div class="why-wrapper">
 
       <!-- LEFT CONTENT -->
@@ -169,14 +175,15 @@
     </div>
   </section>
   <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-  }
+function openMenu() {
+  document.getElementById("nav-links").style.left = "0";
+}
 </script>
+
 
 </body>
 
-  <footer class="footer">
+<footer class="footer">
   <div class="footer-container">
 
     <div class="footer-section">

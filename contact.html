@@ -12,12 +12,13 @@
 <body>
   <header>
     <h1>Spicy Hub Restaurant</h1>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <div class="hamburger" onclick="openMenu()">☰</div>
     <nav id="nav-links">
-      <a href="index.html">Home</a> 
-      <a href="menu.html">Menu</a> 
-      <a href="services.html">Services</a> 
-      <a href="order.html">Online Order</a>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
   <br>
@@ -28,19 +29,19 @@
       <p><strong>📱 Mobile Number:</strong> +91 7010644408</p>
       <p><strong>📧 Email:</strong> spicyhubrestaurant@gmail.com</p>
     </div>
-
-    <form>
+  
+    <form action="contact.php" method="post">
       <label>Name</label>
-      <input type="text" placeholder="Enter your name">
+      <input type="text" placeholder="Enter your name" name="name" required>
 
       <label>Email</label>
-      <input type="email" placeholder="Enter your email">
-
+      <input type="email" placeholder="Enter your email" name="email" required>
       <label>Message</label>
-      <textarea rows="4"></textarea>
+      <textarea rows="4" name="message" required></textarea>
 
-      <input type="submit" value="Send Message">
+      <input type="submit" name="submit" value="Send Message">
     </form>
+  
   </section>
 
   <section id="map">
@@ -50,10 +51,10 @@
       referrerpolicy="no-referrer-when-downgrade" alt="map"></iframe>
   </section>
   <script>
-  function toggleMenu() {
-    document.getElementById("nav-links").classList.toggle("active");
-  }
-</script>
+    function openMenu() {
+      document.getElementById("nav-links").style.left = "0";
+    }
+  </script>
 
 </body>
 
